@@ -69,7 +69,7 @@ main .img::before {
     width: 50px;
     height: 50px;
     background-size: cover;
-    background-image: url('./icon-view.svg');
+    background-image: url('../icon-view.svg');
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
