@@ -1,2 +1,7 @@
-# Preview-Card
-Modern preview card using HTML &amp; CSS
+# NFT-Preview-Card
+
+✨ Equilibrium NFT - Stylish Digital Card ✨
+
+This design features a sleek NFT display card from the Equilibrium collection, showcasing a perfect blend of minimalism and modern aesthetics with a calming vibe.
+
+Demo:
