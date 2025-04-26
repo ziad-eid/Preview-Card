@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "outfit", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(217, 54%, 11%);
+}
+@media (max-width: 767px) {
+    body{
+        width: 420px;
+    }
+}
+main {
+    background-color: hsl(216, 50%, 16%);
+    padding: 30px;
+    width: 375px;
+    border-radius: 15px;
+    position: relative;
+}
+main::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 450px;
+    height: 705px;
+    background-color: hsla(215, 57%, 10%, 0.438);
+    left: -37px;
+    top: -30px;
+    border-radius: 50px;
+}
+
+main::after {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 410px;
+    height: 630px;
+    background-color: hsl(216, 56%, 10%);
+    left: -17.5px;
+    top: 20px;
+    border-radius: 50px;
+
+}
+
+main .img {
+    margin: 0;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    overflow: hidden;
+    height: 315.8px;
+}
+
+main .img img {
+    max-width: 100%;
+}
+
+main .img::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-image: url(/icon-view.svg);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 0;
+    transition: .3s;
+}
+
+main .img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(178, 100%, 50%, 0.425);
+    opacity: 0;
+    transition: .3s;
+}
+
+main .img:hover::before,
+main .img:hover::after {
+    opacity: 1;
+}
+
+main h2 {
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+main h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+main p {
+    font-size: 18px;
+    color: hsl(215, 52%, 70%);
+    margin: 0;
+    font-weight: 300;
+}
+
+main .date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+main .date span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+main .date span:nth-child(1) {
+    color: hsl(178, 100%, 50%);
+}
+
+main .date span:nth-child(2) {
+    color: hsl(215, 51%, 70%);
+}
+
+main .date span img {
+    margin-right: 7px;
+}
+
+main .creator {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+main .creator img {
+    width: 40px;
+    height: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+main .creator .name {
+    color: hsl(0, 0%, 100%);
+    margin-left: 7px;
+    font-size: 400;
+    transition: .3s;
+    cursor: pointer;
+}
+
+main .creator .name:hover {
+    color: hsl(178, 100%, 50%);
+}
